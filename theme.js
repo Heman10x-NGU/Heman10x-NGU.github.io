@@ -29,18 +29,19 @@
     syncLabel();
   }
 
-  // A 160ms sine sweep: down for dark, up for light. Quiet, and only after a click.
+  // A 160ms triangle-wave sweep: down for dark, up for light. Quiet, and only after a click.
   function tick(next) {
     try {
       audio = audio || new (window.AudioContext || window.webkitAudioContext)();
+      if (audio.state === "suspended") audio.resume();
       var t = audio.currentTime;
       var osc = audio.createOscillator();
       var gain = audio.createGain();
-      osc.type = "sine";
+      osc.type = "triangle";
       osc.frequency.setValueAtTime(next === "dark" ? 520 : 700, t);
       osc.frequency.exponentialRampToValueAtTime(next === "dark" ? 280 : 1040, t + 0.12);
       gain.gain.setValueAtTime(0.0001, t);
-      gain.gain.exponentialRampToValueAtTime(0.05, t + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.18, t + 0.01);
       gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.16);
       osc.connect(gain).connect(audio.destination);
       osc.start(t);
@@ -76,7 +77,7 @@
             "circle(" + radius + "px at " + o.x + "px " + o.y + "px)",
           ],
         },
-        { duration: 520, easing: "cubic-bezier(0.4, 0, 0.2, 1)", pseudoElement: "::view-transition-new(root)" }
+        { duration: 650, easing: "cubic-bezier(0.4, 0, 0.2, 1)", pseudoElement: "::view-transition-new(root)" }
       );
     });
   });
