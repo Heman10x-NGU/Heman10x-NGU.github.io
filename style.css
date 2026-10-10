@@ -200,7 +200,8 @@ h3 { font-family: var(--font-serif); font-weight: 500; color: var(--ink); }
   line-height: 1.3;
   color: var(--ink);
 }
-.about p + p { margin-top: 16px; }
+.about p + p,
+#how p + p { margin-top: 16px; }
 
 /* 6. Definition rows (Now, Stack, Reading). Label column, then text. */
 .rows { --label-col: 96px; }

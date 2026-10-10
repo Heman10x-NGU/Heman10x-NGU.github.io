@@ -17,15 +17,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <script>
   try {
     var saved = localStorage.getItem("theme");
     if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
   } catch (e) {}
 </script>
-<script src="theme.js?v=4" defer></script>
-<script src="motion.js?v=4" defer></script>
+<script src="theme.js?v=5" defer></script>
+<script src="motion.js?v=5" defer></script>
 </head>
 <body id="top">
 <a class="skip-link" href="#work">Skip to work</a>
@@ -53,7 +53,7 @@
   <div class="intro">
     <div class="wrap">
       <figure class="banner" tabindex="0">
-        <img src="banner-knight.webp?v=4" alt="A knight in dark armor kneeling in a field of blue flowers under a summer sky" width="1360" height="687">
+        <img src="banner-knight.webp?v=5" alt="A knight in dark armor kneeling in a field of blue flowers under a summer sky" width="1360" height="687">
       </figure>
       <img class="avatar" src="/hemant-avatar-halftone.webp" alt="Hemant Kumar" width="72" height="72">
       <h1>Hemant Kumar</h1>
@@ -68,7 +68,7 @@
         <dl class="rows">
           <div><dt class="label">Building</dt><dd>FractalMem, memory for coding agents that run for hours.</dd></div>
           <div><dt class="label">Reading</dt><dd>Looped transformers, recursive self-improvement, and the economics of inference.</dd></div>
-          <div><dt class="label">Training</dt><dd>Lifting, five days a week.</dd></div>
+          <div><dt class="label">Training</dt><dd>Lifting.</dd></div>
         </dl>
       </div>
     </div>
@@ -328,7 +328,7 @@
       <article class="project" id="p-fractalmem">
         <div class="project-head">
           <h3>FractalMem</h3>
-          <p class="label">2026 · Private for now</p>
+          <p class="label">2026 · Python</p>
         </div>
         <p class="hook">Memory for long-running coding agents. Compact the context, keep the evidence.</p>
         <p class="project-body">When an agent compacts its context, the summary drops the details it needs an hour later, like the exact name of a function. FractalMem stores redacted events in SQLite, builds a hierarchical summary that only appends, so the prompt prefix stays stable for caching, and lets the agent search exact symbols and text over MCP.</p>
@@ -430,7 +430,7 @@
           <div><dt>0</dt><dd>API keys needed; it runs offline</dd></div>
         </dl>
         <p class="project-links">
-          <span>Source on request</span>
+          <a href="https://github.com/Heman10x-NGU/fractal-mem" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
         </p>
       </article>
 
@@ -767,6 +767,15 @@
     </div>
   </section>
 
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How I work</h2>
+      <p>I study agents closely: how they plan, where they cut corners, and how they fail without telling you. Knowing that is what lets me hand them the repetitive work while I keep the parts that need judgment, like the spec, the architecture, and the review.</p>
+      <p>I think evals matter more than anything else in an AI system. If I can't measure whether a change helped, I don't trust it. That's why the projects above ship with their benchmarks, including the results that went against me.</p>
+      <p>The problems I want to spend the next few years on: memory for AI systems, architectures beyond the autoregressive transformer decoder, models whose structure borrows from the brain's topology, small calibrated models that make decisions, and better chip design. If you're working on one of these, reach out on <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> or <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a>.</p>
+    </div>
+  </section>
+
   <section class="section" aria-labelledby="experience-title">
     <div class="wrap">
       <h2 id="experience-title">Experience</h2>
@@ -826,7 +835,8 @@
     <div class="wrap">
       <h2 id="about-title">About</h2>
       <p>I have more interests than hours, and my attention jumps between them. I'm fairly sure I'm neurodivergent, and AI changed what that means for me. With agents I can learn a field in a week, prototype in it the next, and find out fast whether an idea holds up. I think that's one of the biggest things AI does for people whose brains work like mine.</p>
-      <p>When I'm away from the keyboard, I'm traveling somewhere new with friends, out for the evening, or in the gym. I lift five days a week. Otherwise I'm working with my agents.</p>
+      <p>When I'm away from the keyboard, I'm traveling somewhere new with friends, out for the evening, or in the gym lifting. Otherwise I'm working with my agents.</p>
+      <p>I believe that if a problem doesn't break the laws of physics, it can be solved, however hard it is. That's the bar I use when deciding what to work on.</p>
     </div>
   </section>
 </main>
