@@ -1,39 +1,809 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hemant Kumar — AI infrastructure & applied AI engineer</title>
-    <meta
-      name="description"
-      content="I build AI products end to end: AI inference systems, agentic infrastructure, and the backend and evaluation systems that make them reliable."
-    />
-    <meta name="theme-color" content="#08090a" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101416'/%3E%3Ctext x='32' y='45' font-family='Inter,system-ui,sans-serif' font-size='36' font-weight='800' fill='%2336d8ff' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E"
-    />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hemant Kumar</title>
+<meta name="description" content="Applied AI engineer at BNY. I build inference engines, agent memory, small calibrated models, and the evals that keep them honest.">
+<meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b0a" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Hemant Kumar, applied AI engineer">
+<meta property="og:description" content="Applied AI engineer at BNY. I build inference engines, agent memory, small calibrated models, and the evals that keep them honest.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://heman10x-ngu.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@heman10x">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161615'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Newsreader,Georgia,serif' font-size='22' fill='%23fafaf8'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+  try {
+    var saved = localStorage.getItem("theme");
+    if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+  } catch (e) {}
+</script>
+<script src="theme.js" defer></script>
+</head>
+<body id="top">
+<a class="skip-link" href="#work">Skip to work</a>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Hemant Kumar" />
-    <meta property="og:title" content="Hemant Kumar — AI infrastructure & applied AI engineer" />
-    <meta
-      property="og:description"
-      content="AI inference systems, agentic infrastructure, reliability signals, and backend systems built with measured limits."
-    />
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">Hemant Kumar</a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#reading">Reading</a>
+        <a href="#about">About</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@Heman10x" />
-    <meta name="twitter:creator" content="@Heman10x" />
-    <meta name="twitter:title" content="Hemant Kumar — AI infrastructure & applied AI engineer" />
-    <meta
-      name="twitter:description"
-      content="AI inference systems, agentic infrastructure, reliability signals, and backend systems built with measured limits."
-    />
-    <script type="module" crossorigin src="/assets/index-CKKT8oO2.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DkoPSS5j.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<main>
+  <div class="intro">
+    <div class="wrap">
+      <img class="avatar" src="/hemant-avatar-halftone.webp" alt="Hemant Kumar" width="56" height="56">
+      <h1>Hemant Kumar</h1>
+      <p class="lead">Applied AI engineer at BNY · India</p>
+      <p>I build AI systems end to end: inference, agents, retrieval, evals, and the backend that keeps them running. I've been an applied AI engineer at BNY since July 2024.</p>
+      <p>I spend my own attention on the spec and the system design and let agents do the grinding. Then I prototype, ship, test, and improve, as fast as the work allows.</p>
+      <p>On the side I train small models, take big ones apart, and publish the benchmarks, including the ones that didn't go my way.</p>
+      <p class="links"><a href="https://github.com/Heman10x-NGU" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="mailto:heman10x@gmail.com">Email</a> · <a href="https://drive.google.com/file/d/1lrbMB1X9jkKniAyCvrBgJoAhVP8mZ7Sy/view?usp=sharing" target="_blank" rel="noopener"><span class="nw">Résumé<span class="ext" aria-hidden="true">↗</span></span></a></p>
+
+      <div class="now">
+        <p class="label">Now · October 2026</p>
+        <dl class="rows">
+          <div><dt class="label">Building</dt><dd>FractalMem, memory for coding agents that run for hours.</dd></div>
+          <div><dt class="label">Reading</dt><dd>Looped transformers, recursive self-improvement, and the economics of inference.</dd></div>
+          <div><dt class="label">Training</dt><dd>Lifting, five days a week.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title">Selected work</h2>
+
+      <article class="project" id="p-verdict">
+        <div class="project-head">
+          <h3>openJev Verdict</h3>
+          <p class="label">2026 · 405 stars</p>
+        </div>
+        <p class="hook">A 151M model that makes typed decisions in about 20 ms, and ranks first among open models on JevBench.</p>
+        <p class="project-body">Most automation asks a chat model for JSON, then parses it and retries when it breaks. Verdict skips generation. One forward pass over ModernBERT returns a typed choice, score, or yes/no with a calibrated confidence, so plain code can decide when to act and when to hand off to a person. Version 1.4 fixed three inference bugs without retraining and moved the JevBench score from 66.2 to 74.9. Verdict 2.0, a separate fine-tune, beats TypeSafe's Jev and the 421M Laya on typed-decisions.</p>
+        <figure class="fig">
+          <div class="fig-art" data-fig="verdict">
+<div class="fig-wide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="100%" role="img" aria-labelledby="verdict-title verdict-desc">
+  <title id="verdict-title">JevBench scores for seven models</title>
+  <desc id="verdict-desc">Horizontal bars of JevBench scores on a truncated axis that runs from 50 to 80. Jev 1.13.0 scores 75.4. openJev Verdict v1.4 scores 74.9 and is highlighted. Semlf scores 74.7, djev 74.3, Laya 70.1, openjev-sglang 66.3, and GPT-5.6 Luna 66.2.</desc>
+  <line class="f-line" x1="230" y1="0" x2="230" y2="276"/>
+  <line class="f-line" x1="353.3" y1="0" x2="353.3" y2="276"/>
+  <line class="f-line" x1="476.7" y1="0" x2="476.7" y2="276"/>
+  <line class="f-line" x1="600" y1="0" x2="600" y2="276"/>
+
+  <text class="f-label f-ink" x="0" y="24">Jev 1.13.0</text>
+  <text class="f-small f-muted" x="0" y="38">TypeSafe AI, closed</text>
+  <rect class="f-bar" x="230" y="20" width="313.2" height="14" rx="2"/>
+  <text class="f-num f-muted" x="551.2" y="31.5">75.4</text>
+
+  <text class="f-label f-ink" x="0" y="62" font-weight="600">openJev Verdict v1.4*</text>
+  <text class="f-small f-muted" x="0" y="76">151M, open</text>
+  <rect class="f-ink" x="230" y="58" width="307.1" height="14" rx="2"/>
+  <text class="f-num f-ink" x="545.1" y="69.5">74.9</text>
+
+  <text class="f-label f-ink" x="0" y="100">Semlf</text>
+  <text class="f-small f-muted" x="0" y="114">Qwen3.5-4B</text>
+  <rect class="f-bar" x="230" y="96" width="304.6" height="14" rx="2"/>
+  <text class="f-num f-muted" x="542.6" y="107.5">74.7</text>
+
+  <text class="f-label f-ink" x="0" y="138">djev</text>
+  <text class="f-small f-muted" x="0" y="152">diffusion-gemma</text>
+  <rect class="f-bar" x="230" y="134" width="299.7" height="14" rx="2"/>
+  <text class="f-num f-muted" x="537.7" y="145.5">74.3</text>
+
+  <text class="f-label f-ink" x="0" y="176">Laya</text>
+  <text class="f-small f-muted" x="0" y="190">ModernBERT-large, 421M</text>
+  <rect class="f-bar" x="230" y="172" width="247.9" height="14" rx="2"/>
+  <text class="f-num f-muted" x="485.9" y="183.5">70.1</text>
+
+  <text class="f-label f-ink" x="0" y="214">openjev-sglang</text>
+  <text class="f-small f-muted" x="0" y="228">Qwen3.6-35B-A3B</text>
+  <rect class="f-bar" x="230" y="210" width="201" height="14" rx="2"/>
+  <text class="f-num f-muted" x="439" y="221.5">66.3</text>
+
+  <text class="f-label f-ink" x="0" y="252">GPT-5.6 Luna</text>
+  <text class="f-small f-muted" x="0" y="266">OpenAI, low reasoning</text>
+  <rect class="f-bar" x="230" y="248" width="199.8" height="14" rx="2"/>
+  <text class="f-num f-muted" x="437.8" y="259.5">66.2</text>
+
+  <text class="f-num f-muted" x="230" y="294" text-anchor="middle">50</text>
+  <text class="f-num f-muted" x="353.3" y="294" text-anchor="middle">60</text>
+  <text class="f-num f-muted" x="476.7" y="294" text-anchor="middle">70</text>
+  <text class="f-num f-muted" x="600" y="294" text-anchor="middle">80</text>
+</svg>
+</div>
+<div class="fig-narrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="100%" role="img" aria-labelledby="verdict-narrow-title verdict-narrow-desc">
+  <title id="verdict-narrow-title">JevBench scores for seven models</title>
+  <desc id="verdict-narrow-desc">Horizontal bars of JevBench scores on a truncated axis that runs from 50 to 80. Jev 1.13.0 scores 75.4. openJev Verdict v1.4 scores 74.9 and is highlighted. Semlf scores 74.7, djev 74.3, Laya 70.1, openjev-sglang 66.3, and GPT-5.6 Luna 66.2.</desc>
+  <path class="f-line" d="M0 25V53M0 69V97M0 113V141M0 157V185M0 201V229M0 245V273M0 289V316"/>
+  <path class="f-line" d="M100 25V53M100 69V97M100 113V141M100 157V185M100 201V229M100 245V273M100 289V316"/>
+  <path class="f-line" d="M200 25V53M200 69V97M200 113V141M200 157V185M200 201V229M200 245V273M200 289V316"/>
+  <path class="f-line" d="M300 25V53M300 69V97M300 113V141M300 157V185M300 201V229M300 245V273M300 289V316"/>
+
+  <text class="f-label f-ink" x="0" y="20">Jev 1.13.0<tspan class="f-small f-muted" dx="8">TypeSafe AI, closed</tspan></text>
+  <rect class="f-bar" x="0" y="28" width="254" height="14" rx="2"/>
+  <text class="f-num f-muted" x="258" y="39.5">75.4</text>
+
+  <text class="f-label f-ink" x="0" y="64" font-weight="600">openJev Verdict v1.4*<tspan class="f-small f-muted" font-weight="400" dx="8">151M, open</tspan></text>
+  <rect class="f-ink" x="0" y="72" width="249" height="14" rx="2"/>
+  <text class="f-num f-ink" x="253" y="83.5">74.9</text>
+
+  <text class="f-label f-ink" x="0" y="108">Semlf<tspan class="f-small f-muted" dx="8">Qwen3.5-4B</tspan></text>
+  <rect class="f-bar" x="0" y="116" width="247" height="14" rx="2"/>
+  <text class="f-num f-muted" x="251" y="127.5">74.7</text>
+
+  <text class="f-label f-ink" x="0" y="152">djev<tspan class="f-small f-muted" dx="8">diffusion-gemma</tspan></text>
+  <rect class="f-bar" x="0" y="160" width="243" height="14" rx="2"/>
+  <text class="f-num f-muted" x="247" y="171.5">74.3</text>
+
+  <text class="f-label f-ink" x="0" y="196">Laya<tspan class="f-small f-muted" dx="8">ModernBERT-large, 421M</tspan></text>
+  <rect class="f-bar" x="0" y="204" width="201" height="14" rx="2"/>
+  <text class="f-num f-muted" x="205" y="215.5">70.1</text>
+
+  <text class="f-label f-ink" x="0" y="240">openjev-sglang<tspan class="f-small f-muted" dx="8">Qwen3.6-35B-A3B</tspan></text>
+  <rect class="f-bar" x="0" y="248" width="163" height="14" rx="2"/>
+  <text class="f-num f-muted" x="167" y="259.5">66.3</text>
+
+  <text class="f-label f-ink" x="0" y="284">GPT-5.6 Luna<tspan class="f-small f-muted" dx="8">OpenAI, low reasoning</tspan></text>
+  <rect class="f-bar" x="0" y="292" width="162" height="14" rx="2"/>
+  <text class="f-num f-muted" x="166" y="303.5">66.2</text>
+
+  <text class="f-num f-muted" x="0" y="332">50</text>
+  <text class="f-num f-muted" x="100" y="332" text-anchor="middle">60</text>
+  <text class="f-num f-muted" x="200" y="332" text-anchor="middle">70</text>
+  <text class="f-num f-muted" x="300" y="332" text-anchor="middle">80</text>
+</svg>
+</div>
+</div><!-- /fig-art -->
+          <figcaption>JevBench score: intelligence, calibration, speed, and cost, 25% each. Verdict sits above GPT-5.6 Luna and a 35B Qwen MoE mostly because each decision is far cheaper and faster. *Verdict v1.4 was scored on the 231 public tasks; the other rows on all 534.</figcaption>
+        </figure>
+        <dl class="stats">
+          <div><dt>74.9</dt><dd>JevBench score, #1 open model</dd></div>
+          <div><dt>77.10%</dt><dd>accuracy on 2,000 held-out decisions (Laya 76.60%, Jev 72.70%)</dd></div>
+          <div><dt>1.44%</dt><dd>calibration error (ECE) on the confidence head</dd></div>
+          <div><dt>8.8 h</dt><dd>to fine-tune, on a consumer laptop GPU</dd></div>
+        </dl>
+        <p class="project-links">
+          <a href="https://github.com/Heman10x-NGU/openJev-verdict-2.0" target="_blank" rel="noopener">Verdict 2.0 on <span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
+          <a href="https://github.com/Heman10x-NGU/Verdict-open-jev" target="_blank" rel="noopener">Verdict 1.4 on <span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
+          <a href="https://huggingface.co/heman10x/rlcd-modernbert-151m" target="_blank" rel="noopener">Hugging <span class="nw">Face<span class="ext" aria-hidden="true">↗</span></span></a>
+          <a href="https://heman10x-ngu.github.io/openJev-verdict-2.0/" target="_blank" rel="noopener">Project <span class="nw">page<span class="ext" aria-hidden="true">↗</span></span></a>
+        </p>
+      </article>
+
+      <article class="project" id="p-expert-stream">
+        <div class="project-head">
+          <h3>expert-stream</h3>
+          <p class="label">2026 · C++ / llama.cpp</p>
+        </div>
+        <p class="hook">A 284B model generating text on a 16 GB laptop. Its published memory floor is 96 GB.</p>
+        <p class="project-body">DeepSeek V4-Flash is 82.5 GB on disk, but each token only uses 6 of 256 experts per layer. So the engine leaves the experts on the NVMe SSD and streams in the ones each token picks. Stock llama.cpp died after two tokens on this machine; capping the working set lets it run to completion, and the greedy output is byte-identical. It's slow, under one token a second, and the repo shows where every second goes.</p>
+        <figure class="fig">
+          <div class="fig-art" data-fig="expert-stream">
+<div class="fig-wide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="100%" role="img" aria-labelledby="expert-stream-title expert-stream-desc">
+  <title id="expert-stream-title">An 82.5 GB model streamed from SSD into 16 GB of RAM</title>
+  <desc id="expert-stream-desc">Three bars on one 0 to 100 GB scale: published memory floor of 96 GB, model on disk of 82.5 GB shown as a dashed outline, and this laptop's RAM of 16 GB, highlighted. Below, a flow: the SSD holds 256 experts across 43 layers, each token uses the top 6 per layer, and 1.649 GiB is streamed into RAM.</desc>
+
+  <text class="f-label f-ink" x="0" y="24.5">Published memory floor</text>
+  <rect class="f-bar" x="230" y="9" width="316.8" height="22" rx="2"/>
+  <text class="f-num f-muted" x="554.8" y="24.5">96 GB</text>
+
+  <text class="f-label f-ink" x="0" y="76.5">Model on disk (NVMe SSD)</text>
+  <rect class="f-stroke" x="230" y="61" width="272.25" height="22" rx="2" stroke-dasharray="4 3"/>
+  <text class="f-num f-muted" x="510.25" y="76.5">82.5 GB</text>
+
+  <text class="f-label f-ink" x="0" y="128.5" font-weight="600">This laptop's RAM</text>
+  <rect class="f-ink" x="230" y="113" width="52.8" height="22" rx="2"/>
+  <text class="f-num f-ink" x="290.8" y="128.5">16 GB</text>
+
+  <line class="f-line" x1="230" y1="150" x2="560" y2="150"/>
+  <text class="f-num f-muted" x="230" y="170" text-anchor="middle">0</text>
+  <text class="f-num f-muted" x="395" y="170" text-anchor="middle">50</text>
+  <text class="f-num f-muted" x="560" y="170" text-anchor="middle">100 GB</text>
+
+  <rect class="f-bg" x="1" y="196" width="170" height="64" rx="2"/>
+  <rect class="f-line" x="1" y="196" width="170" height="64" rx="2"/>
+  <text class="f-label f-ink" text-anchor="middle"><tspan x="86" y="224">SSD: 256 experts</tspan><tspan x="86" y="241">&#215; 43 layers</tspan></text>
+
+  <line class="f-stroke" x1="172" y1="228" x2="226" y2="228"/>
+  <path class="f-ink" d="M226 224 L234 228 L226 232 Z"/>
+
+  <rect class="f-bg" x="235" y="196" width="170" height="64" rx="2"/>
+  <rect class="f-line" x="235" y="196" width="170" height="64" rx="2"/>
+  <text class="f-label f-ink" text-anchor="middle"><tspan x="320" y="224">Per token:</tspan><tspan x="320" y="241">top 6 per layer</tspan></text>
+
+  <line class="f-stroke" x1="406" y1="228" x2="460" y2="228"/>
+  <path class="f-ink" d="M460 224 L468 228 L460 232 Z"/>
+
+  <rect class="f-bg" x="469" y="196" width="170" height="64" rx="2"/>
+  <rect class="f-line" x="469" y="196" width="170" height="64" rx="2"/>
+  <text class="f-label f-ink" text-anchor="middle"><tspan x="554" y="224">RAM: 1.649 GiB</tspan><tspan x="554" y="241">streamed in</tspan></text>
+</svg>
+</div>
+<div class="fig-narrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 438" width="100%" role="img" aria-labelledby="expert-stream-narrow-title expert-stream-narrow-desc">
+  <title id="expert-stream-narrow-title">An 82.5 GB model streamed from SSD into 16 GB of RAM</title>
+  <desc id="expert-stream-narrow-desc">Three bars on one 0 to 100 GB scale: published memory floor of 96 GB, model on disk of 82.5 GB shown as a dashed outline, and this laptop's RAM of 16 GB, highlighted. Below, a flow: the SSD holds 256 experts across 43 layers, each token uses the top 6 per layer, and 1.649 GiB is streamed into RAM.</desc>
+
+  <text class="f-label f-ink" x="0" y="18">Published memory floor</text>
+  <rect class="f-bar" x="0" y="24" width="278.4" height="22" rx="2"/>
+  <text class="f-num f-muted" x="286.4" y="39.5">96 GB</text>
+
+  <text class="f-label f-ink" x="0" y="72">Model on disk (NVMe SSD)</text>
+  <rect class="f-stroke" x="0" y="80" width="239.25" height="22" rx="2" stroke-dasharray="4 3"/>
+  <text class="f-num f-muted" x="247.25" y="95.5">82.5 GB</text>
+
+  <text class="f-label f-ink" x="0" y="128" font-weight="600">This laptop's RAM</text>
+  <rect class="f-ink" x="0" y="136" width="46.4" height="22" rx="2"/>
+  <text class="f-num f-ink" x="54.4" y="151.5">16 GB</text>
+
+  <line class="f-line" x1="0" y1="172" x2="290" y2="172"/>
+  <text class="f-num f-muted" x="0" y="192">0</text>
+  <text class="f-num f-muted" x="145" y="192" text-anchor="middle">50</text>
+  <text class="f-num f-muted" x="290" y="192" text-anchor="middle">100 GB</text>
+
+  <rect class="f-bg" x="1" y="218" width="338" height="56" rx="2"/>
+  <rect class="f-line" x="1" y="218" width="338" height="56" rx="2"/>
+  <text class="f-label f-ink" text-anchor="middle"><tspan x="170" y="242">SSD: 256 experts</tspan><tspan x="170" y="260">&#215; 43 layers</tspan></text>
+
+  <line class="f-stroke" x1="170" y1="274" x2="170" y2="288"/>
+  <path class="f-ink" d="M166.5 288 L170 295 L173.5 288 Z"/>
+
+  <rect class="f-bg" x="1" y="296" width="338" height="56" rx="2"/>
+  <rect class="f-line" x="1" y="296" width="338" height="56" rx="2"/>
+  <text class="f-label f-ink" text-anchor="middle"><tspan x="170" y="320">Per token:</tspan><tspan x="170" y="338">top 6 per layer</tspan></text>
+
+  <line class="f-stroke" x1="170" y1="352" x2="170" y2="366"/>
+  <path class="f-ink" d="M166.5 366 L170 373 L173.5 366 Z"/>
+
+  <rect class="f-bg" x="1" y="374" width="338" height="56" rx="2"/>
+  <rect class="f-line" x="1" y="374" width="338" height="56" rx="2"/>
+  <text class="f-label f-ink" text-anchor="middle"><tspan x="170" y="398">RAM: 1.649 GiB</tspan><tspan x="170" y="416">streamed in</tspan></text>
+</svg>
+</div>
+</div><!-- /fig-art -->
+          <figcaption>Every token reads 1.649 GiB of expert weights from disk to produce about 700 KB of activations.</figcaption>
+        </figure>
+        <dl class="stats">
+          <div><dt>82.5 GB</dt><dd>model, on a laptop with 16 GB of RAM</dd></div>
+          <div><dt>identical</dt><dd>greedy output to stock llama.cpp</dd></div>
+          <div><dt>124 → 95 s</dt><dd>same prompt, after swapping in the streaming reader</dd></div>
+          <div><dt>0.71 tok/s</dt><dd>I/O-only ceiling at 0% cache hits</dd></div>
+        </dl>
+        <p class="project-links">
+          <a href="https://github.com/Heman10x-NGU/expert-stream" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
+        </p>
+      </article>
+
+      <article class="project" id="p-fractalmem">
+        <div class="project-head">
+          <h3>FractalMem</h3>
+          <p class="label">2026 · Private for now</p>
+        </div>
+        <p class="hook">Memory for long-running coding agents. Compact the context, keep the evidence.</p>
+        <p class="project-body">When an agent compacts its context, the summary drops the details it needs an hour later, like the exact name of a function. FractalMem stores redacted events in SQLite, builds a hierarchical summary that only appends, so the prompt prefix stays stable for caching, and lets the agent search exact symbols and text over MCP.</p>
+        <figure class="fig">
+          <div class="fig-art" data-fig="fractalmem">
+<div class="fig-wide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="100%" role="img">
+  <title>Fractalmem mechanism</title>
+  <desc>Three agent sessions and an agent hook feed the fractald daemon, which owns all writes. The daemon appends to a summary tree and to a SQLite database with FTS5 full-text search that stores redacted events. The MCP tool search_symbols_and_text reads from that database.</desc>
+  <rect class="f-bg" x="24" y="46" width="150" height="44" rx="4"/>
+  <rect class="f-line" x="24" y="46" width="150" height="44" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="36" y="73">agent session 1</text>
+  <rect class="f-bg" x="24" y="128" width="150" height="44" rx="4"/>
+  <rect class="f-line" x="24" y="128" width="150" height="44" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="36" y="155">agent session 2</text>
+  <rect class="f-bg" x="24" y="210" width="150" height="44" rx="4"/>
+  <rect class="f-line" x="24" y="210" width="150" height="44" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="36" y="237">agent hook</text>
+  <path class="f-stroke" stroke-width="1.5" d="M174 68 H198 V232 M174 150 H213 M174 232 H198"/>
+  <path class="f-ink" d="M213 146.5 L220 150 L213 153.5 Z"/>
+  <rect class="f-bg" x="220" y="112" width="140" height="76" rx="4"/>
+  <rect class="f-stroke" x="220" y="112" width="140" height="76" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="232" y="145">fractald daemon</text>
+  <text class="f-small f-muted" x="232" y="163">owns all writes</text>
+  <path class="f-stroke" stroke-width="1.5" d="M360 134 H382 V105 H397 M360 166 H382 V214 H397"/>
+  <path class="f-ink" d="M397 101.5 L404 105 L397 108.5 Z"/>
+  <path class="f-ink" d="M397 210.5 L404 214 L397 217.5 Z"/>
+  <text class="f-label f-ink" x="404" y="24">summary tree (append-only)</text>
+  <path class="f-stroke" stroke-width="1.5" d="M500 74 V84 H436 V94 M500 84 H564 V94 M436 116 V127 H420 V133 M436 127 H452 V133 M564 116 V127 H548 V133 M564 127 H580 V133"/>
+  <rect class="f-stroke" x="458" y="50" width="84" height="24" rx="4" stroke-width="1.5"/>
+  <rect class="f-stroke" x="404" y="94" width="64" height="22" rx="4" stroke-width="1.5"/>
+  <rect class="f-stroke" x="532" y="94" width="64" height="22" rx="4" stroke-width="1.5"/>
+  <circle class="f-bar" cx="420" cy="138" r="5"/>
+  <circle class="f-bar" cx="452" cy="138" r="5"/>
+  <circle class="f-bar" cx="548" cy="138" r="5"/>
+  <circle class="f-bar" cx="580" cy="138" r="5"/>
+  <path class="f-stroke" stroke-width="1.5" d="M404 196 A45 8 0 0 1 494 196 A45 8 0 0 1 404 196 Z M404 196 V232 A45 8 0 0 0 494 232 V196"/>
+  <text class="f-label f-ink" x="510" y="210">SQLite + FTS5</text>
+  <text class="f-small f-muted" x="510" y="226">redacted events</text>
+  <path class="f-stroke" stroke-width="1.5" d="M449 240 V249"/>
+  <path class="f-ink" d="M445.5 249 L449 256 L452.5 249 Z"/>
+  <rect class="f-ink" x="392" y="256" width="224" height="28" rx="4"/>
+  <text class="f-label f-bg" x="404" y="275">MCP: search_symbols_and_text</text>
+</svg>
+</div>
+<div class="fig-narrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 428" width="100%" role="img">
+  <title>Fractalmem mechanism</title>
+  <desc>Three agent sessions and an agent hook feed the fractald daemon, which owns all writes. The daemon appends to a summary tree and to a SQLite database with FTS5 full-text search that stores redacted events. The MCP tool search_symbols_and_text reads from that database.</desc>
+
+  <rect class="f-bg" x="1" y="8" width="296" height="34" rx="4"/>
+  <rect class="f-line" x="1" y="8" width="296" height="34" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="149" y="30" text-anchor="middle">agent session 1</text>
+  <rect class="f-bg" x="1" y="50" width="296" height="34" rx="4"/>
+  <rect class="f-line" x="1" y="50" width="296" height="34" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="149" y="72" text-anchor="middle">agent session 2</text>
+  <rect class="f-bg" x="1" y="92" width="296" height="34" rx="4"/>
+  <rect class="f-line" x="1" y="92" width="296" height="34" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="149" y="114" text-anchor="middle">agent hook</text>
+  <path class="f-stroke" stroke-width="1.5" d="M297 25 H320 V150 H170 V152 M297 67 H320 M297 109 H320"/>
+  <path class="f-ink" d="M165 152 H175 L170 160 Z"/>
+
+  <rect class="f-bg" x="1" y="160" width="338" height="56" rx="4"/>
+  <rect class="f-stroke" x="1" y="160" width="338" height="56" rx="4" stroke-width="1.5"/>
+  <text class="f-label f-ink" x="170" y="184" text-anchor="middle">fractald daemon</text>
+  <text class="f-small f-muted" x="170" y="201" text-anchor="middle">owns all writes</text>
+
+  <path class="f-stroke" stroke-width="1.5" d="M170 216 V229 H94 V234 M170 229 H270 V234"/>
+  <path class="f-ink" d="M90.5 234 L94 241 L97.5 234 Z"/>
+  <path class="f-ink" d="M266.5 234 L270 241 L273.5 234 Z"/>
+
+  <text class="f-label f-ink" x="0" y="256">summary tree (append-only)</text>
+  <path class="f-stroke" stroke-width="1.5" d="M94 304 V314 H48 V324 M94 314 H140 V324 M48 346 V357 H32 V363 M48 357 H64 V363 M140 346 V357 H124 V363 M140 357 H156 V363"/>
+  <rect class="f-stroke" x="52" y="280" width="84" height="24" rx="4" stroke-width="1.5"/>
+  <rect class="f-stroke" x="16" y="324" width="64" height="22" rx="4" stroke-width="1.5"/>
+  <rect class="f-stroke" x="108" y="324" width="64" height="22" rx="4" stroke-width="1.5"/>
+  <circle class="f-bar" cx="32" cy="368" r="5"/>
+  <circle class="f-bar" cx="64" cy="368" r="5"/>
+  <circle class="f-bar" cx="124" cy="368" r="5"/>
+  <circle class="f-bar" cx="156" cy="368" r="5"/>
+
+  <path class="f-stroke" stroke-width="1.5" d="M210 249 A60 8 0 0 1 330 249 A60 8 0 0 1 210 249 Z M210 249 V289 A60 8 0 0 0 330 289 V249"/>
+  <text class="f-label f-ink" x="270" y="271" text-anchor="middle">SQLite + FTS5</text>
+  <text class="f-small f-muted" x="270" y="288" text-anchor="middle">redacted events</text>
+  <path class="f-stroke" stroke-width="1.5" d="M270 297 V383"/>
+  <path class="f-ink" d="M266.5 383 L270 390 L273.5 383 Z"/>
+
+  <rect class="f-ink" x="1" y="390" width="338" height="30" rx="4"/>
+  <text class="f-label f-bg" x="170" y="410" text-anchor="middle">MCP: search_symbols_and_text</text>
+</svg>
+</div>
+</div><!-- /fig-art -->
+          <figcaption>Hooks send events to one daemon. The daemon owns writes, builds the summary tree, and serves search over MCP.</figcaption>
+        </figure>
+        <dl class="stats">
+          <div><dt>97.83%</dt><dd>session recall@10 on LongMemEval (cleaned oracle, 470 questions)</dd></div>
+          <div><dt>1,000/1,000</dt><dd>exact-symbol top matches, p99 query 0.03 ms</dd></div>
+          <div><dt>99.47%</dt><dd>of 30,000 turns kept the byte prefix, zero violations</dd></div>
+          <div><dt>0</dt><dd>API keys needed; it runs offline</dd></div>
+        </dl>
+        <p class="project-links">
+          <span>Source on request</span>
+        </p>
+      </article>
+
+      <article class="project" id="p-nanoserve">
+        <div class="project-head">
+          <h3>nanoserve</h3>
+          <p class="label">2026 · Python / MLX</p>
+        </div>
+        <p class="hook">A small inference engine for Apple Silicon with continuous batching, prefix caching, and OpenAI-compatible streaming.</p>
+        <p class="project-body">Running one prompt locally is easy. Serving overlapping requests is where the real problems are: who owns the KV cache, when to reuse a prefix, and how to schedule. nanoserve is my answer in MLX, measured on an M4 with Qwen2.5-0.5B.</p>
+        <figure class="fig">
+          <div class="fig-art" data-fig="nanoserve">
+<div class="fig-wide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="100%" role="img">
+  <title>Time to first token, cold prefix and warm prefix</title>
+  <desc>Two horizontal bars share a 0 to 250 ms axis. The cold prefix takes 240.50 ms to first token. The warm prefix with cache takes 77.76 ms, which is 67.7% faster.</desc>
+  <path class="f-line" d="M270 24 V156 M340 24 V156 M410 24 V156 M480 24 V156 M550 24 V156"/>
+  <path class="f-stroke" stroke-width="1.5" d="M200 24 V156 H550"/>
+  <rect class="f-bar" x="200" y="42" width="336.7" height="28"/>
+  <text class="f-label f-ink" x="24" y="61">Cold prefix</text>
+  <rect class="f-bg" x="540" y="44" width="76" height="24"/>
+  <text class="f-num f-ink" x="544" y="61">240.50 ms</text>
+  <rect class="f-ink" x="200" y="98" width="108.86" height="28"/>
+  <text class="f-label f-ink" x="24" y="117">Warm prefix (cached)</text>
+  <rect class="f-bg" x="312" y="100" width="180" height="28"/>
+  <text class="f-num f-ink" x="317" y="117">77.76 ms</text>
+  <text class="f-label f-ink" x="388" y="117" font-weight="600">67.7% faster</text>
+  <text class="f-num f-muted" x="200" y="176" text-anchor="middle">0</text>
+  <text class="f-num f-muted" x="270" y="176" text-anchor="middle">50</text>
+  <text class="f-num f-muted" x="340" y="176" text-anchor="middle">100</text>
+  <text class="f-num f-muted" x="410" y="176" text-anchor="middle">150</text>
+  <text class="f-num f-muted" x="480" y="176" text-anchor="middle">200</text>
+  <text class="f-num f-muted" x="550" y="176" text-anchor="middle">250</text>
+  <text class="f-small f-muted" x="375" y="198" text-anchor="middle">ms to first token</text>
+</svg>
+</div>
+<div class="fig-narrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 192" width="100%" role="img">
+  <title>Time to first token, cold prefix and warm prefix</title>
+  <desc>Two horizontal bars share a 0 to 250 ms axis. The cold prefix takes 240.50 ms to first token. The warm prefix with cache takes 77.76 ms, which is 67.7% faster.</desc>
+  <text class="f-label f-ink" x="0" y="18">Cold prefix</text>
+  <rect class="f-bar" x="0" y="26" width="288.6" height="28"/>
+  <text class="f-num f-ink" x="280.6" y="44.5" text-anchor="end">240.50 ms</text>
+  <text class="f-label f-ink" x="0" y="80">Warm prefix (cached)</text>
+  <rect class="f-ink" x="0" y="88" width="93.31" height="28"/>
+  <text class="f-num f-bg" x="85.31" y="106.5" text-anchor="end">77.76 ms</text>
+  <text class="f-label f-ink" x="103.31" y="106.68" font-weight="600">67.7% faster</text>
+  <path class="f-stroke" stroke-width="1.5" d="M0 140 H300"/>
+  <path class="f-stroke" d="M0 140 V146 M60 140 V146 M120 140 V146 M180 140 V146 M240 140 V146 M300 140 V146"/>
+  <text class="f-num f-muted" x="0" y="160">0</text>
+  <text class="f-num f-muted" x="60" y="160" text-anchor="middle">50</text>
+  <text class="f-num f-muted" x="120" y="160" text-anchor="middle">100</text>
+  <text class="f-num f-muted" x="180" y="160" text-anchor="middle">150</text>
+  <text class="f-num f-muted" x="240" y="160" text-anchor="middle">200</text>
+  <text class="f-num f-muted" x="300" y="160" text-anchor="middle">250</text>
+  <text class="f-small f-muted" x="150" y="182" text-anchor="middle">ms to first token</text>
+</svg>
+</div>
+</div><!-- /fig-art -->
+          <figcaption>Median time to first token with a 576-token prefix, cold versus warm cache, on an M4.</figcaption>
+        </figure>
+        <dl class="stats">
+          <div><dt>63.94 ms</dt><dd>median time to first token</dd></div>
+          <div><dt>67.7%</dt><dd>faster first token on a warm prefix</dd></div>
+          <div><dt>178.79 tok/s</dt><dd>median, vs 173.50 for mlx_lm.generate</dd></div>
+          <div><dt>80.76 ms</dt><dd>p95 first token at 8 concurrent requests</dd></div>
+        </dl>
+        <p class="project-links">
+          <a href="https://github.com/Heman10x-NGU/nanoserve" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
+        </p>
+      </article>
+
+      <article class="project" id="p-threadgraph">
+        <div class="project-head">
+          <h3>ThreadGraph</h3>
+          <p class="label">2026 · Go</p>
+        </div>
+        <p class="hook">Finds goroutine leaks and deadlocks from execution traces. It caught 64 of 68 real bugs.</p>
+        <p class="project-body">Go concurrency bugs depend on scheduling, so tests pass and reviewers miss them. ThreadGraph reads a runtime trace, rebuilds which goroutine spawned and blocked which, and runs leak, lock-cycle, and channel analyses. It needs no instrumentation.</p>
+        <figure class="fig">
+          <div class="fig-art" data-fig="threadgraph">
+<div class="fig-wide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" width="100%" role="img">
+  <title>Detection of 68 GoBench GoKer blocking bugs: 64 detected, 4 missed</title>
+  <desc>A grid of 68 dots, 17 columns by 4 rows, one dot per blocking bug. The 64 filled dots are detected. The 4 outlined dots at the end of the last row are missed.</desc>
+  <circle cx="48" cy="30" r="9" class="f-ink"/>
+  <circle cx="82" cy="30" r="9" class="f-ink"/>
+  <circle cx="116" cy="30" r="9" class="f-ink"/>
+  <circle cx="150" cy="30" r="9" class="f-ink"/>
+  <circle cx="184" cy="30" r="9" class="f-ink"/>
+  <circle cx="218" cy="30" r="9" class="f-ink"/>
+  <circle cx="252" cy="30" r="9" class="f-ink"/>
+  <circle cx="286" cy="30" r="9" class="f-ink"/>
+  <circle cx="320" cy="30" r="9" class="f-ink"/>
+  <circle cx="354" cy="30" r="9" class="f-ink"/>
+  <circle cx="388" cy="30" r="9" class="f-ink"/>
+  <circle cx="422" cy="30" r="9" class="f-ink"/>
+  <circle cx="456" cy="30" r="9" class="f-ink"/>
+  <circle cx="490" cy="30" r="9" class="f-ink"/>
+  <circle cx="524" cy="30" r="9" class="f-ink"/>
+  <circle cx="558" cy="30" r="9" class="f-ink"/>
+  <circle cx="592" cy="30" r="9" class="f-ink"/>
+  <circle cx="48" cy="64" r="9" class="f-ink"/>
+  <circle cx="82" cy="64" r="9" class="f-ink"/>
+  <circle cx="116" cy="64" r="9" class="f-ink"/>
+  <circle cx="150" cy="64" r="9" class="f-ink"/>
+  <circle cx="184" cy="64" r="9" class="f-ink"/>
+  <circle cx="218" cy="64" r="9" class="f-ink"/>
+  <circle cx="252" cy="64" r="9" class="f-ink"/>
+  <circle cx="286" cy="64" r="9" class="f-ink"/>
+  <circle cx="320" cy="64" r="9" class="f-ink"/>
+  <circle cx="354" cy="64" r="9" class="f-ink"/>
+  <circle cx="388" cy="64" r="9" class="f-ink"/>
+  <circle cx="422" cy="64" r="9" class="f-ink"/>
+  <circle cx="456" cy="64" r="9" class="f-ink"/>
+  <circle cx="490" cy="64" r="9" class="f-ink"/>
+  <circle cx="524" cy="64" r="9" class="f-ink"/>
+  <circle cx="558" cy="64" r="9" class="f-ink"/>
+  <circle cx="592" cy="64" r="9" class="f-ink"/>
+  <circle cx="48" cy="98" r="9" class="f-ink"/>
+  <circle cx="82" cy="98" r="9" class="f-ink"/>
+  <circle cx="116" cy="98" r="9" class="f-ink"/>
+  <circle cx="150" cy="98" r="9" class="f-ink"/>
+  <circle cx="184" cy="98" r="9" class="f-ink"/>
+  <circle cx="218" cy="98" r="9" class="f-ink"/>
+  <circle cx="252" cy="98" r="9" class="f-ink"/>
+  <circle cx="286" cy="98" r="9" class="f-ink"/>
+  <circle cx="320" cy="98" r="9" class="f-ink"/>
+  <circle cx="354" cy="98" r="9" class="f-ink"/>
+  <circle cx="388" cy="98" r="9" class="f-ink"/>
+  <circle cx="422" cy="98" r="9" class="f-ink"/>
+  <circle cx="456" cy="98" r="9" class="f-ink"/>
+  <circle cx="490" cy="98" r="9" class="f-ink"/>
+  <circle cx="524" cy="98" r="9" class="f-ink"/>
+  <circle cx="558" cy="98" r="9" class="f-ink"/>
+  <circle cx="592" cy="98" r="9" class="f-ink"/>
+  <circle cx="48" cy="132" r="9" class="f-ink"/>
+  <circle cx="82" cy="132" r="9" class="f-ink"/>
+  <circle cx="116" cy="132" r="9" class="f-ink"/>
+  <circle cx="150" cy="132" r="9" class="f-ink"/>
+  <circle cx="184" cy="132" r="9" class="f-ink"/>
+  <circle cx="218" cy="132" r="9" class="f-ink"/>
+  <circle cx="252" cy="132" r="9" class="f-ink"/>
+  <circle cx="286" cy="132" r="9" class="f-ink"/>
+  <circle cx="320" cy="132" r="9" class="f-ink"/>
+  <circle cx="354" cy="132" r="9" class="f-ink"/>
+  <circle cx="388" cy="132" r="9" class="f-ink"/>
+  <circle cx="422" cy="132" r="9" class="f-ink"/>
+  <circle cx="456" cy="132" r="9" class="f-ink"/>
+  <circle cx="490" cy="132" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="524" cy="132" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="558" cy="132" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="592" cy="132" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="48" cy="173" r="6" class="f-ink"/>
+  <text x="62" y="178" class="f-label f-ink">detected (64)</text>
+  <circle cx="172" cy="173" r="5.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <text x="186" y="178" class="f-label f-muted">missed (4)</text>
+</svg>
+</div>
+<div class="fig-narrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 248" width="100%" role="img">
+  <title>Detection of 68 GoBench GoKer blocking bugs: 64 detected, 4 missed</title>
+  <desc>A grid of 68 dots, 10 columns by 7 rows, one dot per blocking bug. The 64 filled dots are detected. The 4 outlined dots at the end of the last row are missed.</desc>
+  <circle cx="12" cy="12" r="9" class="f-ink"/>
+  <circle cx="42" cy="12" r="9" class="f-ink"/>
+  <circle cx="72" cy="12" r="9" class="f-ink"/>
+  <circle cx="102" cy="12" r="9" class="f-ink"/>
+  <circle cx="132" cy="12" r="9" class="f-ink"/>
+  <circle cx="162" cy="12" r="9" class="f-ink"/>
+  <circle cx="192" cy="12" r="9" class="f-ink"/>
+  <circle cx="222" cy="12" r="9" class="f-ink"/>
+  <circle cx="252" cy="12" r="9" class="f-ink"/>
+  <circle cx="282" cy="12" r="9" class="f-ink"/>
+  <circle cx="12" cy="42" r="9" class="f-ink"/>
+  <circle cx="42" cy="42" r="9" class="f-ink"/>
+  <circle cx="72" cy="42" r="9" class="f-ink"/>
+  <circle cx="102" cy="42" r="9" class="f-ink"/>
+  <circle cx="132" cy="42" r="9" class="f-ink"/>
+  <circle cx="162" cy="42" r="9" class="f-ink"/>
+  <circle cx="192" cy="42" r="9" class="f-ink"/>
+  <circle cx="222" cy="42" r="9" class="f-ink"/>
+  <circle cx="252" cy="42" r="9" class="f-ink"/>
+  <circle cx="282" cy="42" r="9" class="f-ink"/>
+  <circle cx="12" cy="72" r="9" class="f-ink"/>
+  <circle cx="42" cy="72" r="9" class="f-ink"/>
+  <circle cx="72" cy="72" r="9" class="f-ink"/>
+  <circle cx="102" cy="72" r="9" class="f-ink"/>
+  <circle cx="132" cy="72" r="9" class="f-ink"/>
+  <circle cx="162" cy="72" r="9" class="f-ink"/>
+  <circle cx="192" cy="72" r="9" class="f-ink"/>
+  <circle cx="222" cy="72" r="9" class="f-ink"/>
+  <circle cx="252" cy="72" r="9" class="f-ink"/>
+  <circle cx="282" cy="72" r="9" class="f-ink"/>
+  <circle cx="12" cy="102" r="9" class="f-ink"/>
+  <circle cx="42" cy="102" r="9" class="f-ink"/>
+  <circle cx="72" cy="102" r="9" class="f-ink"/>
+  <circle cx="102" cy="102" r="9" class="f-ink"/>
+  <circle cx="132" cy="102" r="9" class="f-ink"/>
+  <circle cx="162" cy="102" r="9" class="f-ink"/>
+  <circle cx="192" cy="102" r="9" class="f-ink"/>
+  <circle cx="222" cy="102" r="9" class="f-ink"/>
+  <circle cx="252" cy="102" r="9" class="f-ink"/>
+  <circle cx="282" cy="102" r="9" class="f-ink"/>
+  <circle cx="12" cy="132" r="9" class="f-ink"/>
+  <circle cx="42" cy="132" r="9" class="f-ink"/>
+  <circle cx="72" cy="132" r="9" class="f-ink"/>
+  <circle cx="102" cy="132" r="9" class="f-ink"/>
+  <circle cx="132" cy="132" r="9" class="f-ink"/>
+  <circle cx="162" cy="132" r="9" class="f-ink"/>
+  <circle cx="192" cy="132" r="9" class="f-ink"/>
+  <circle cx="222" cy="132" r="9" class="f-ink"/>
+  <circle cx="252" cy="132" r="9" class="f-ink"/>
+  <circle cx="282" cy="132" r="9" class="f-ink"/>
+  <circle cx="12" cy="162" r="9" class="f-ink"/>
+  <circle cx="42" cy="162" r="9" class="f-ink"/>
+  <circle cx="72" cy="162" r="9" class="f-ink"/>
+  <circle cx="102" cy="162" r="9" class="f-ink"/>
+  <circle cx="132" cy="162" r="9" class="f-ink"/>
+  <circle cx="162" cy="162" r="9" class="f-ink"/>
+  <circle cx="192" cy="162" r="9" class="f-ink"/>
+  <circle cx="222" cy="162" r="9" class="f-ink"/>
+  <circle cx="252" cy="162" r="9" class="f-ink"/>
+  <circle cx="282" cy="162" r="9" class="f-ink"/>
+  <circle cx="12" cy="192" r="9" class="f-ink"/>
+  <circle cx="42" cy="192" r="9" class="f-ink"/>
+  <circle cx="72" cy="192" r="9" class="f-ink"/>
+  <circle cx="102" cy="192" r="9" class="f-ink"/>
+  <circle cx="132" cy="192" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="162" cy="192" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="192" cy="192" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="222" cy="192" r="8.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <circle cx="12" cy="233" r="6" class="f-ink"/>
+  <text x="26" y="237.68" class="f-label f-ink">detected (64)</text>
+  <circle cx="135.85" cy="233" r="5.25" class="f-stroke" fill="none" stroke-width="1.5"/>
+  <text x="149.85" y="237.68" class="f-label f-muted">missed (4)</text>
+</svg>
+</div>
+</div><!-- /fig-art -->
+          <figcaption>GoBench GoKer: 68 blocking bugs taken from production Go projects. Filled dots were detected.</figcaption>
+        </figure>
+        <dl class="stats">
+          <div><dt>64 / 68</dt><dd>GoBench GoKer bugs detected (94%)</dd></div>
+          <div><dt>0</dt><dd>false positives on the net/http/httptest control (224 goroutines)</dd></div>
+        </dl>
+        <p class="project-links">
+          <a href="https://github.com/Heman10x-NGU/threadgraph" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
+        </p>
+      </article>
+
+      <article class="project" id="p-scout">
+        <div class="project-head">
+          <h3>scout-deterministic</h3>
+          <p class="label">2026 · Python</p>
+        </div>
+        <p class="hook">Reward-hacking scanners for agent transcripts that finish in 0.4 seconds. The LLM judge takes 560.</p>
+        <p class="project-body">Coding agents can pass pytest without solving the task. I wrote four rule-based scanners for Inspect Scout and benchmarked them against its LLM judge on 26 live episodes. They are much faster and cost nothing, with lower precision, and I published the case none of them caught: an agent that made <code>assert 1 + 1 == 3</code> pass.</p>
+        <figure class="fig">
+          <div class="fig-art" data-fig="scout">
+<div class="fig-wide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="100%" role="img">
+  <title>Wall time on a log scale: rule-based scanners and the LLM judge</title>
+  <desc>Two bars on a log axis from 0.1 s to 1000 s. Rule-based scanners take 0.4 s. The LLM judge (llm_scanner) takes 560 s. Both were timed on 26 transcripts on the same machine.</desc>
+  <line x1="200" y1="14" x2="200" y2="130" class="f-line"/>
+  <line x1="300" y1="14" x2="300" y2="130" class="f-line"/>
+  <line x1="400" y1="14" x2="400" y2="130" class="f-line"/>
+  <line x1="500" y1="14" x2="500" y2="130" class="f-line"/>
+  <line x1="600" y1="14" x2="600" y2="130" class="f-line"/>
+  <line x1="200" y1="130" x2="600" y2="130" class="f-stroke"/>
+  <rect x="200" y="36" width="60.21" height="24" class="f-ink"/>
+  <rect x="264.21" y="39" width="45.5" height="18" class="f-bg"/>
+  <text x="268.21" y="52.5" class="f-num f-ink">0.4 s</text>
+  <text x="0" y="52.5" class="f-label f-ink">Rule-based scanners</text>
+  <rect x="200" y="84" width="374.82" height="24" class="f-bar"/>
+  <rect x="578.82" y="87" width="45.5" height="18" class="f-bg"/>
+  <text x="582.82" y="100.5" class="f-num f-ink">560 s</text>
+  <text x="0" y="100.5" class="f-label f-ink">LLM judge (llm_scanner)</text>
+  <text x="200" y="148" text-anchor="middle" class="f-num f-muted">0.1 s</text>
+  <text x="300" y="148" text-anchor="middle" class="f-num f-muted">1 s</text>
+  <text x="400" y="148" text-anchor="middle" class="f-num f-muted">10 s</text>
+  <text x="500" y="148" text-anchor="middle" class="f-num f-muted">100 s</text>
+  <text x="600" y="148" text-anchor="middle" class="f-num f-muted">1000 s</text>
+</svg>
+</div>
+<div class="fig-narrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 162" width="100%" role="img">
+  <title>Wall time on a log scale: rule-based scanners and the LLM judge</title>
+  <desc>Two bars on a log axis from 0.1 s to 1000 s. Rule-based scanners take 0.4 s. The LLM judge (llm_scanner) takes 560 s. Both were timed on 26 transcripts on the same machine.</desc>
+  <text class="f-label f-ink" x="0" y="18">Rule-based scanners</text>
+  <rect class="f-ink" x="0" y="26" width="43.65" height="24"/>
+  <text class="f-num f-ink" x="49.65" y="42.5">0.4 s</text>
+  <text class="f-label f-ink" x="0" y="80">LLM judge (llm_scanner)</text>
+  <rect class="f-bar" x="0" y="88" width="271.74" height="24"/>
+  <text class="f-num f-ink" x="277.74" y="104.5">560 s</text>
+  <path class="f-stroke" d="M0 136 H290"/>
+  <path class="f-stroke" d="M0 136 V141 M72.5 136 V141 M145 136 V141 M217.5 136 V141 M290 136 V141"/>
+  <text class="f-num f-muted" x="0" y="154">0.1 s</text>
+  <text class="f-num f-muted" x="72.5" y="154" text-anchor="middle">1 s</text>
+  <text class="f-num f-muted" x="145" y="154" text-anchor="middle">10 s</text>
+  <text class="f-num f-muted" x="217.5" y="154" text-anchor="middle">100 s</text>
+  <text class="f-num f-muted" x="290" y="154" text-anchor="middle">1000 s</text>
+</svg>
+</div>
+</div><!-- /fig-art -->
+          <figcaption>Wall time to scan the same 26 transcripts. Bars on a log scale.</figcaption>
+        </figure>
+        <dl class="stats">
+          <div><dt>0.4 s</dt><dd>vs 560 s for the LLM judge</dd></div>
+          <div><dt>$0</dt><dd>token cost</dd></div>
+          <div><dt>100% / 54%</dt><dd>recall / precision (LLM judge: 79% / 85%)</dd></div>
+          <div><dt>0.79</dt><dd>F1 for the best single scanner</dd></div>
+        </dl>
+        <p class="project-links">
+          <a href="https://github.com/Heman10x-NGU/scout-deterministic" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="more-title">
+    <div class="wrap">
+      <h2 id="more-title">More work</h2>
+      <ul class="more">
+        <li><a href="https://github.com/Heman10x-NGU/agent-board" target="_blank" rel="noopener">Agent <span class="nw">Board<span class="ext" aria-hidden="true">↗</span></span></a><span>Planner, executors, and a review gate. Nothing commits until the verifier passes.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/palimp" target="_blank" rel="noopener"><span class="nw">Palimp<span class="ext" aria-hidden="true">↗</span></span></a><span>A local context graph for agents with provenance, temporal recall, and contradiction tracking.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/hallucination-sentinel" target="_blank" rel="noopener">Hallucination <span class="nw">Sentinel<span class="ext" aria-hidden="true">↗</span></span></a><span>A single-pass risk score for LLM output, calibrated into allow, warn, or block.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/still-mini-kv-compactor" target="_blank" rel="noopener">Still <span class="nw">Mini<span class="ext" aria-hidden="true">↗</span></span></a><span>A learned 8× KV-cache compactor lost to a simple baseline, 0.12 to 0.54. The writeup explains why.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/dag-moe-reproduction" target="_blank" rel="noopener">DAG-MoE <span class="nw">reproduction<span class="ext" aria-hidden="true">↗</span></span></a><span>The ICML 2026 routing mechanism on an M4 Air. No loss advantage at that scale, reported as is.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/NexusCache" target="_blank" rel="noopener"><span class="nw">NexusCache<span class="ext" aria-hidden="true">↗</span></span></a><span>Distributed cache in Go with consistent hashing and etcd discovery. 23.4K ops/s at 713 µs p50.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/TitanQueue" target="_blank" rel="noopener"><span class="nw">TitanQueue<span class="ext" aria-hidden="true">↗</span></span></a><span>A Redis task queue in Go. When a worker dies, its lease expires and the task comes back.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/context-rag" target="_blank" rel="noopener"><span class="nw">ContextRAG<span class="ext" aria-hidden="true">↗</span></span></a><span>Local hybrid retrieval: dense vectors plus BM25, rank fusion, and a reranker, served over MCP.</span></li>
+        <li><a href="https://heman10x-ngu.github.io/github-trending-report/" target="_blank" rel="noopener">GitHub Trending <span class="nw">Report<span class="ext" aria-hidden="true">↗</span></span></a><span>Daily GitHub Trending, sorted into categories and scored by repeat appearances.</span></li>
+        <li><a href="https://github.com/Heman10x-NGU/unslop" target="_blank" rel="noopener"><span class="nw">Unslop<span class="ext" aria-hidden="true">↗</span></span></a><span>An agent skill that strips AI-writing tells from prose without touching the facts.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="experience-title">
+    <div class="wrap">
+      <h2 id="experience-title">Experience</h2>
+      <div class="job">
+        <p><strong>BNY</strong> Applied AI Engineer</p>
+        <p class="label">Jul 2024 to now</p>
+      </div>
+      <p class="job-note">RAG assistants, multi-agent systems, MCP servers, eval harnesses, and backend services for financial platforms that move about $100B a day.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="stack-title">
+    <div class="wrap">
+      <h2 id="stack-title">Stack</h2>
+      <dl class="rows">
+        <div><dt class="label">Languages</dt><dd>Python, TypeScript, Go, Java, SQL</dd></div>
+        <div><dt class="label">AI</dt><dd>PyTorch, MLX, llama.cpp, Hugging Face, fine-tuning, RAG, evals, MCP</dd></div>
+        <div><dt class="label">Backend</dt><dd>FastAPI, Spring Boot, Node.js, gRPC, Kafka, Redis, PostgreSQL, SQLite</dd></div>
+        <div><dt class="label">Infra</dt><dd>Docker, Prometheus, GitHub Actions</dd></div>
+        <div><dt class="label">Agents</dt><dd>Claude Code, Codex, Cursor</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="reading" aria-labelledby="reading-title">
+    <div class="wrap">
+      <h2 id="reading-title">Reading</h2>
+      <p class="reading-intro">The threads I keep pulling, roughly in order of how much time they eat.</p>
+      <dl class="rows rows-wide">
+        <div><dt class="label">Silicon</dt><dd>GPUs, chip architecture, and LLM inference engineering</dd></div>
+        <div><dt class="label">Infrastructure</dt><dd>Distributed systems and the infra behind AI at scale</dd></div>
+        <div><dt class="label">Models</dt><dd>Transformer architectures, looped transformers, and research papers most weeks</dd></div>
+        <div><dt class="label">Agents</dt><dd>Multi-agent orchestration, software factories, and recursive self-improvement</dd></div>
+        <div><dt class="label">Markets</dt><dd>The economics of LLMs, data centers, and startups. VC reports on where it's all heading, and the new wave of AI labs</dd></div>
+        <div><dt class="label">Products</dt><dd>Consumer AI apps, and why some of them stick</dd></div>
+        <div><dt class="label">Mind</dt><dd>Neuroscience, neuroplasticity, and some philosophy</dd></div>
+      </dl>
+      <h3 class="subhead">Papers I've reproduced or built on</h3>
+      <ul class="papers">
+        <li><a href="https://github.com/Heman10x-NGU/dag-moe-reproduction" target="_blank" rel="noopener">DAG-MoE (ICML <span class="nw">2026)<span class="ext" aria-hidden="true">↗</span></span></a>: reproduced on a laptop</li>
+        <li><a href="https://github.com/Heman10x-NGU/still-mini-kv-compactor" target="_blank" rel="noopener">Still, KV-cache <span class="nw">compaction<span class="ext" aria-hidden="true">↗</span></span></a>: a laptop-scale version</li>
+        <li><a href="https://huggingface.co/heman10x/rlcd-modernbert-151m" target="_blank" rel="noopener">ModernBERT and <span class="nw">GLiClass<span class="ext" aria-hidden="true">↗</span></span></a>: the backbone under Verdict</li>
+        <li>LongMemEval and LoCoMo: the memory benchmarks behind FractalMem</li>
+        <li><a href="https://github.com/Heman10x-NGU/threadgraph" target="_blank" rel="noopener"><span class="nw">GoBench<span class="ext" aria-hidden="true">↗</span></span></a>: the bug suite ThreadGraph is scored on</li>
+      </ul>
+      <!-- Blogs: add <li> items here in the same format to show a "Blogs I read" list. -->
+    </div>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <h2 id="about-title">About</h2>
+      <p>I have more interests than hours, and my attention jumps between them. I'm fairly sure I'm neurodivergent, and AI changed what that means for me. With agents I can learn a field in a week, prototype in it the next, and find out fast whether an idea holds up. I think that's one of the biggest things AI does for people whose brains work like mine.</p>
+      <p>When I'm away from the keyboard, I'm traveling somewhere new with friends, out for the evening, or in the gym. I lift five days a week. Otherwise I'm working with my agents.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>I post what I'm building and reading on X. Follow along at <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">@heman10x<span class="ext" aria-hidden="true">↗</span></span></a>.</p>
+    <p class="links"><a href="https://github.com/Heman10x-NGU" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="mailto:heman10x@gmail.com">Email</a> · <a href="https://drive.google.com/file/d/1lrbMB1X9jkKniAyCvrBgJoAhVP8mZ7Sy/view?usp=sharing" target="_blank" rel="noopener"><span class="nw">Résumé<span class="ext" aria-hidden="true">↗</span></span></a></p>
+    <p class="small">© 2026 Hemant Kumar · This is v2. The previous site is at <a href="/v1/">/v1/</a>.</p>
+  </div>
+</footer>
+</body>
 </html>
