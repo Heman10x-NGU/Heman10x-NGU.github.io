@@ -25,6 +25,7 @@
   } catch (e) {}
 </script>
 <script src="theme.js" defer></script>
+<script src="motion.js" defer></script>
 </head>
 <body id="top">
 <a class="skip-link" href="#work">Skip to work</a>
@@ -51,13 +52,16 @@
 <main>
   <div class="intro">
     <div class="wrap">
-      <img class="avatar" src="/hemant-avatar-halftone.webp" alt="Hemant Kumar" width="56" height="56">
+      <figure class="banner" tabindex="0">
+        <img src="banner-knight.webp" alt="A knight in dark armor kneeling in a field of blue flowers under a summer sky" width="1360" height="687">
+      </figure>
+      <img class="avatar" src="/hemant-avatar-halftone.webp" alt="Hemant Kumar" width="72" height="72">
       <h1>Hemant Kumar</h1>
       <p class="lead">Applied AI engineer at BNY · India</p>
       <p>I build AI systems end to end: inference, agents, retrieval, evals, and the backend that keeps them running. I've been an applied AI engineer at BNY since July 2024.</p>
       <p>I spend my own attention on the spec and the system design and let agents do the grinding. Then I prototype, ship, test, and improve, as fast as the work allows.</p>
       <p>On the side I train small models, take big ones apart, and publish the benchmarks, including the ones that didn't go my way.</p>
-      <p class="links"><a href="https://github.com/Heman10x-NGU" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="mailto:heman10x@gmail.com">Email</a> · <a href="https://drive.google.com/file/d/1lrbMB1X9jkKniAyCvrBgJoAhVP8mZ7Sy/view?usp=sharing" target="_blank" rel="noopener"><span class="nw">Résumé<span class="ext" aria-hidden="true">↗</span></span></a></p>
+      <p class="links"><a href="https://github.com/Heman10x-NGU" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="mailto:heman10x@gmail.com">Email</a></p>
 
       <div class="now">
         <p class="label">Now · October 2026</p>
@@ -79,105 +83,128 @@
           <h3>openJev Verdict</h3>
           <p class="label">2026 · 405 stars</p>
         </div>
-        <p class="hook">A 151M model that makes typed decisions in about 20 ms, and ranks first among open models on JevBench.</p>
-        <p class="project-body">Most automation asks a chat model for JSON, then parses it and retries when it breaks. Verdict skips generation. One forward pass over ModernBERT returns a typed choice, score, or yes/no with a calibrated confidence, so plain code can decide when to act and when to hand off to a person. Version 1.4 fixed three inference bugs without retraining and moved the JevBench score from 66.2 to 74.9. Verdict 2.0, a separate fine-tune, beats TypeSafe's Jev and the 421M Laya on typed-decisions.</p>
+        <p class="hook">A 151M model that makes typed decisions in about 20 ms, and beat models up to 230 times its size on JevBench.</p>
+        <p class="project-body">Most automation asks a chat model for JSON, then parses it and retries when it breaks. Verdict skips generation. One forward pass over ModernBERT returns a typed choice, score, or yes/no with a calibrated confidence, so plain code can decide when to act and when to hand off to a person. Version 1.4 fixed three inference bugs without retraining and moved the JevBench score from 66.2 to 74.9. On the 20 September leaderboard that put it first among open models, ahead of models with 9B to 35B parameters, GPT-5.6 Luna, and Gemini 3.1 Flash-Lite. Verdict 2.0, a separate fine-tune, beats TypeSafe's Jev and the 421M Laya on typed-decisions.</p>
         <figure class="fig">
           <div class="fig-art" data-fig="verdict">
 <div class="fig-wide">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="100%" role="img" aria-labelledby="verdict-title verdict-desc">
-  <title id="verdict-title">JevBench scores for seven models</title>
-  <desc id="verdict-desc">Horizontal bars of JevBench scores on a truncated axis that runs from 50 to 80. Jev 1.13.0 scores 75.4. openJev Verdict v1.4 scores 74.9 and is highlighted. Semlf scores 74.7, djev 74.3, Laya 70.1, openjev-sglang 66.3, and GPT-5.6 Luna 66.2.</desc>
-  <line class="f-line" x1="230" y1="0" x2="230" y2="276"/>
-  <line class="f-line" x1="353.3" y1="0" x2="353.3" y2="276"/>
-  <line class="f-line" x1="476.7" y1="0" x2="476.7" y2="276"/>
-  <line class="f-line" x1="600" y1="0" x2="600" y2="276"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 456" width="100%" role="img" aria-labelledby="verdict-title verdict-desc">
+  <title id="verdict-title">JevBench scores, 20 September 2026 leaderboard</title>
+  <desc id="verdict-desc">Horizontal bars of JevBench scores on an axis from 50 to 80. Jev 1.13.0 (TypeSafe AI, closed) scores 75.4. openJev Verdict v1.4* (151M, open) scores 74.9. Semlf (Qwen3.5-4B) scores 74.7. djev (diffusion-gemma) scores 74.3. Laya (ModernBERT-large, 421M) scores 70.1. OpenJev (DiffusionGemma 26B-A4B) scores 67.7. openjev-sglang (Qwen3.6-35B-A3B) scores 66.3. GPT-5.6 Luna (OpenAI, low reasoning) scores 66.2. Bespoke Nimble 9B (Bespoke Labs) scores 63.7. Gemini 3.1 Flash-Lite (Google) scores 60.9. DeepSeek V4.1 Flash (thinking default) scores 57.8. openJev Verdict v1.4, a 151M model, is highlighted.</desc>
+  <line class="f-line" x1="230.0" y1="0" x2="230.0" y2="432"/>
+  <line class="f-line" x1="353.3" y1="0" x2="353.3" y2="432"/>
+  <line class="f-line" x1="476.7" y1="0" x2="476.7" y2="432"/>
+  <line class="f-line" x1="600.0" y1="0" x2="600.0" y2="432"/>
   <text class="f-label f-ink" x="0" y="24">Jev 1.13.0</text>
   <text class="f-small f-muted" x="0" y="38">TypeSafe AI, closed</text>
-  <rect class="f-bar" x="230" y="20" width="313.2" height="14" rx="2"/>
-  <text class="f-num f-muted" x="551.2" y="31.5">75.4</text>
-
+  <rect class="f-bar" x="230" y="20" width="313.3" height="14" rx="2"/>
+  <text class="f-num f-muted" x="551.3" y="31.5">75.4</text>
   <text class="f-label f-ink" x="0" y="62" font-weight="600">openJev Verdict v1.4*</text>
   <text class="f-small f-muted" x="0" y="76">151M, open</text>
   <rect class="f-ink" x="230" y="58" width="307.1" height="14" rx="2"/>
   <text class="f-num f-ink" x="545.1" y="69.5">74.9</text>
-
   <text class="f-label f-ink" x="0" y="100">Semlf</text>
   <text class="f-small f-muted" x="0" y="114">Qwen3.5-4B</text>
   <rect class="f-bar" x="230" y="96" width="304.6" height="14" rx="2"/>
   <text class="f-num f-muted" x="542.6" y="107.5">74.7</text>
-
   <text class="f-label f-ink" x="0" y="138">djev</text>
   <text class="f-small f-muted" x="0" y="152">diffusion-gemma</text>
   <rect class="f-bar" x="230" y="134" width="299.7" height="14" rx="2"/>
   <text class="f-num f-muted" x="537.7" y="145.5">74.3</text>
-
   <text class="f-label f-ink" x="0" y="176">Laya</text>
   <text class="f-small f-muted" x="0" y="190">ModernBERT-large, 421M</text>
   <rect class="f-bar" x="230" y="172" width="247.9" height="14" rx="2"/>
   <text class="f-num f-muted" x="485.9" y="183.5">70.1</text>
-
-  <text class="f-label f-ink" x="0" y="214">openjev-sglang</text>
-  <text class="f-small f-muted" x="0" y="228">Qwen3.6-35B-A3B</text>
-  <rect class="f-bar" x="230" y="210" width="201" height="14" rx="2"/>
-  <text class="f-num f-muted" x="439" y="221.5">66.3</text>
-
-  <text class="f-label f-ink" x="0" y="252">GPT-5.6 Luna</text>
-  <text class="f-small f-muted" x="0" y="266">OpenAI, low reasoning</text>
-  <rect class="f-bar" x="230" y="248" width="199.8" height="14" rx="2"/>
-  <text class="f-num f-muted" x="437.8" y="259.5">66.2</text>
-
-  <text class="f-num f-muted" x="230" y="294" text-anchor="middle">50</text>
-  <text class="f-num f-muted" x="353.3" y="294" text-anchor="middle">60</text>
-  <text class="f-num f-muted" x="476.7" y="294" text-anchor="middle">70</text>
-  <text class="f-num f-muted" x="600" y="294" text-anchor="middle">80</text>
+  <text class="f-label f-ink" x="0" y="214">OpenJev</text>
+  <text class="f-small f-muted" x="0" y="228">DiffusionGemma 26B-A4B</text>
+  <rect class="f-bar" x="230" y="210" width="218.3" height="14" rx="2"/>
+  <text class="f-num f-muted" x="456.3" y="221.5">67.7</text>
+  <text class="f-label f-ink" x="0" y="252">openjev-sglang</text>
+  <text class="f-small f-muted" x="0" y="266">Qwen3.6-35B-A3B</text>
+  <rect class="f-bar" x="230" y="248" width="201.0" height="14" rx="2"/>
+  <text class="f-num f-muted" x="439.0" y="259.5">66.3</text>
+  <text class="f-label f-ink" x="0" y="290">GPT-5.6 Luna</text>
+  <text class="f-small f-muted" x="0" y="304">OpenAI, low reasoning</text>
+  <rect class="f-bar" x="230" y="286" width="199.8" height="14" rx="2"/>
+  <text class="f-num f-muted" x="437.8" y="297.5">66.2</text>
+  <text class="f-label f-ink" x="0" y="328">Bespoke Nimble 9B</text>
+  <text class="f-small f-muted" x="0" y="342">Bespoke Labs</text>
+  <rect class="f-bar" x="230" y="324" width="169.0" height="14" rx="2"/>
+  <text class="f-num f-muted" x="407.0" y="335.5">63.7</text>
+  <text class="f-label f-ink" x="0" y="366">Gemini 3.1 Flash-Lite</text>
+  <text class="f-small f-muted" x="0" y="380">Google</text>
+  <rect class="f-bar" x="230" y="362" width="134.4" height="14" rx="2"/>
+  <text class="f-num f-muted" x="372.4" y="373.5">60.9</text>
+  <text class="f-label f-ink" x="0" y="404">DeepSeek V4.1 Flash</text>
+  <text class="f-small f-muted" x="0" y="418">thinking default</text>
+  <rect class="f-bar" x="230" y="400" width="96.2" height="14" rx="2"/>
+  <text class="f-num f-muted" x="334.2" y="411.5">57.8</text>
+  <text class="f-num f-muted" x="230.0" y="450" text-anchor="middle">50</text>
+  <text class="f-num f-muted" x="353.3" y="450" text-anchor="middle">60</text>
+  <text class="f-num f-muted" x="476.7" y="450" text-anchor="middle">70</text>
+  <text class="f-num f-muted" x="600.0" y="450" text-anchor="middle">80</text>
 </svg>
 </div>
 <div class="fig-narrow">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="100%" role="img" aria-labelledby="verdict-narrow-title verdict-narrow-desc">
-  <title id="verdict-narrow-title">JevBench scores for seven models</title>
-  <desc id="verdict-narrow-desc">Horizontal bars of JevBench scores on a truncated axis that runs from 50 to 80. Jev 1.13.0 scores 75.4. openJev Verdict v1.4 scores 74.9 and is highlighted. Semlf scores 74.7, djev 74.3, Laya 70.1, openjev-sglang 66.3, and GPT-5.6 Luna 66.2.</desc>
-  <path class="f-line" d="M0 25V53M0 69V97M0 113V141M0 157V185M0 201V229M0 245V273M0 289V316"/>
-  <path class="f-line" d="M100 25V53M100 69V97M100 113V141M100 157V185M100 201V229M100 245V273M100 289V316"/>
-  <path class="f-line" d="M200 25V53M200 69V97M200 113V141M200 157V185M200 201V229M200 245V273M200 289V316"/>
-  <path class="f-line" d="M300 25V53M300 69V97M300 113V141M300 157V185M300 201V229M300 245V273M300 289V316"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 524" width="100%" role="img" aria-labelledby="verdict-narrow-title verdict-narrow-desc">
+  <title id="verdict-narrow-title">JevBench scores, 20 September 2026 leaderboard</title>
+  <desc id="verdict-narrow-desc">Horizontal bars of JevBench scores on an axis from 50 to 80. Jev 1.13.0 (TypeSafe AI, closed) scores 75.4. openJev Verdict v1.4* (151M, open) scores 74.9. Semlf (Qwen3.5-4B) scores 74.7. djev (diffusion-gemma) scores 74.3. Laya (ModernBERT-large, 421M) scores 70.1. OpenJev (DiffusionGemma 26B-A4B) scores 67.7. openjev-sglang (Qwen3.6-35B-A3B) scores 66.3. GPT-5.6 Luna (OpenAI, low reasoning) scores 66.2. Bespoke Nimble 9B (Bespoke Labs) scores 63.7. Gemini 3.1 Flash-Lite (Google) scores 60.9. DeepSeek V4.1 Flash (thinking default) scores 57.8. openJev Verdict v1.4, a 151M model, is highlighted.</desc>
+  <path class="f-line" d="M0 25V53M0 69V97M0 113V141M0 157V185M0 201V229M0 245V273M0 289V317M0 333V361M0 377V405M0 421V449M0 465V493"/>
+  <path class="f-line" d="M100 25V53M100 69V97M100 113V141M100 157V185M100 201V229M100 245V273M100 289V317M100 333V361M100 377V405M100 421V449M100 465V493"/>
+  <path class="f-line" d="M200 25V53M200 69V97M200 113V141M200 157V185M200 201V229M200 245V273M200 289V317M200 333V361M200 377V405M200 421V449M200 465V493"/>
+  <path class="f-line" d="M300 25V53M300 69V97M300 113V141M300 157V185M300 201V229M300 245V273M300 289V317M300 333V361M300 377V405M300 421V449M300 465V493"/>
   <text class="f-label f-ink" x="0" y="20">Jev 1.13.0<tspan class="f-small f-muted" dx="8">TypeSafe AI, closed</tspan></text>
-  <rect class="f-bar" x="0" y="28" width="254" height="14" rx="2"/>
-  <text class="f-num f-muted" x="258" y="39.5">75.4</text>
-
+  <rect class="f-bar" x="0" y="28" width="254.0" height="14" rx="2"/>
+  <rect class="f-bg" x="256.0" y="27" width="34" height="16"/>
+  <text class="f-num f-muted" x="258.0" y="39.5">75.4</text>
   <text class="f-label f-ink" x="0" y="64" font-weight="600">openJev Verdict v1.4*<tspan class="f-small f-muted" font-weight="400" dx="8">151M, open</tspan></text>
-  <rect class="f-ink" x="0" y="72" width="249" height="14" rx="2"/>
-  <text class="f-num f-ink" x="253" y="83.5">74.9</text>
-
+  <rect class="f-ink" x="0" y="72" width="249.0" height="14" rx="2"/>
+  <rect class="f-bg" x="251.0" y="71" width="34" height="16"/>
+  <text class="f-num f-ink" x="253.0" y="83.5">74.9</text>
   <text class="f-label f-ink" x="0" y="108">Semlf<tspan class="f-small f-muted" dx="8">Qwen3.5-4B</tspan></text>
-  <rect class="f-bar" x="0" y="116" width="247" height="14" rx="2"/>
-  <text class="f-num f-muted" x="251" y="127.5">74.7</text>
-
+  <rect class="f-bar" x="0" y="116" width="247.0" height="14" rx="2"/>
+  <rect class="f-bg" x="249.0" y="115" width="34" height="16"/>
+  <text class="f-num f-muted" x="251.0" y="127.5">74.7</text>
   <text class="f-label f-ink" x="0" y="152">djev<tspan class="f-small f-muted" dx="8">diffusion-gemma</tspan></text>
-  <rect class="f-bar" x="0" y="160" width="243" height="14" rx="2"/>
-  <text class="f-num f-muted" x="247" y="171.5">74.3</text>
-
+  <rect class="f-bar" x="0" y="160" width="243.0" height="14" rx="2"/>
+  <rect class="f-bg" x="245.0" y="159" width="34" height="16"/>
+  <text class="f-num f-muted" x="247.0" y="171.5">74.3</text>
   <text class="f-label f-ink" x="0" y="196">Laya<tspan class="f-small f-muted" dx="8">ModernBERT-large, 421M</tspan></text>
-  <rect class="f-bar" x="0" y="204" width="201" height="14" rx="2"/>
-  <text class="f-num f-muted" x="205" y="215.5">70.1</text>
-
-  <text class="f-label f-ink" x="0" y="240">openjev-sglang<tspan class="f-small f-muted" dx="8">Qwen3.6-35B-A3B</tspan></text>
-  <rect class="f-bar" x="0" y="248" width="163" height="14" rx="2"/>
-  <text class="f-num f-muted" x="167" y="259.5">66.3</text>
-
-  <text class="f-label f-ink" x="0" y="284">GPT-5.6 Luna<tspan class="f-small f-muted" dx="8">OpenAI, low reasoning</tspan></text>
-  <rect class="f-bar" x="0" y="292" width="162" height="14" rx="2"/>
-  <text class="f-num f-muted" x="166" y="303.5">66.2</text>
-
-  <text class="f-num f-muted" x="0" y="332">50</text>
-  <text class="f-num f-muted" x="100" y="332" text-anchor="middle">60</text>
-  <text class="f-num f-muted" x="200" y="332" text-anchor="middle">70</text>
-  <text class="f-num f-muted" x="300" y="332" text-anchor="middle">80</text>
+  <rect class="f-bar" x="0" y="204" width="201.0" height="14" rx="2"/>
+  <rect class="f-bg" x="203.0" y="203" width="34" height="16"/>
+  <text class="f-num f-muted" x="205.0" y="215.5">70.1</text>
+  <text class="f-label f-ink" x="0" y="240">OpenJev<tspan class="f-small f-muted" dx="8">DiffusionGemma 26B-A4B</tspan></text>
+  <rect class="f-bar" x="0" y="248" width="177.0" height="14" rx="2"/>
+  <rect class="f-bg" x="179.0" y="247" width="34" height="16"/>
+  <text class="f-num f-muted" x="181.0" y="259.5">67.7</text>
+  <text class="f-label f-ink" x="0" y="284">openjev-sglang<tspan class="f-small f-muted" dx="8">Qwen3.6-35B-A3B</tspan></text>
+  <rect class="f-bar" x="0" y="292" width="163.0" height="14" rx="2"/>
+  <rect class="f-bg" x="165.0" y="291" width="34" height="16"/>
+  <text class="f-num f-muted" x="167.0" y="303.5">66.3</text>
+  <text class="f-label f-ink" x="0" y="328">GPT-5.6 Luna<tspan class="f-small f-muted" dx="8">OpenAI, low reasoning</tspan></text>
+  <rect class="f-bar" x="0" y="336" width="162.0" height="14" rx="2"/>
+  <rect class="f-bg" x="164.0" y="335" width="34" height="16"/>
+  <text class="f-num f-muted" x="166.0" y="347.5">66.2</text>
+  <text class="f-label f-ink" x="0" y="372">Bespoke Nimble 9B<tspan class="f-small f-muted" dx="8">Bespoke Labs</tspan></text>
+  <rect class="f-bar" x="0" y="380" width="137.0" height="14" rx="2"/>
+  <rect class="f-bg" x="139.0" y="379" width="34" height="16"/>
+  <text class="f-num f-muted" x="141.0" y="391.5">63.7</text>
+  <text class="f-label f-ink" x="0" y="416">Gemini 3.1 Flash-Lite<tspan class="f-small f-muted" dx="8">Google</tspan></text>
+  <rect class="f-bar" x="0" y="424" width="109.0" height="14" rx="2"/>
+  <rect class="f-bg" x="111.0" y="423" width="34" height="16"/>
+  <text class="f-num f-muted" x="113.0" y="435.5">60.9</text>
+  <text class="f-label f-ink" x="0" y="460">DeepSeek V4.1 Flash<tspan class="f-small f-muted" dx="8">thinking default</tspan></text>
+  <rect class="f-bar" x="0" y="468" width="78.0" height="14" rx="2"/>
+  <rect class="f-bg" x="80.0" y="467" width="34" height="16"/>
+  <text class="f-num f-muted" x="82.0" y="479.5">57.8</text>
+  <text class="f-num f-muted" x="0" y="518" text-anchor="start">50</text>
+  <text class="f-num f-muted" x="100" y="518" text-anchor="middle">60</text>
+  <text class="f-num f-muted" x="200" y="518" text-anchor="middle">70</text>
+  <text class="f-num f-muted" x="300" y="518" text-anchor="end">80</text>
 </svg>
 </div>
 </div><!-- /fig-art -->
-          <figcaption>JevBench score: intelligence, calibration, speed, and cost, 25% each. Verdict sits above GPT-5.6 Luna and a 35B Qwen MoE mostly because each decision is far cheaper and faster. *Verdict v1.4 was scored on the 231 public tasks; the other rows on all 534.</figcaption>
+          <figcaption>JevBench score from the 20 September 2026 leaderboard: intelligence, calibration, speed, and cost, 25% each. *Verdict v1.4 was scored on the 231 public tasks; the other rows on all 534.</figcaption>
         </figure>
         <dl class="stats">
           <div><dt>74.9</dt><dd>JevBench score, #1 open model</dd></div>
@@ -199,7 +226,7 @@
           <p class="label">2026 · C++ / llama.cpp</p>
         </div>
         <p class="hook">A 284B model generating text on a 16 GB laptop. Its published memory floor is 96 GB.</p>
-        <p class="project-body">DeepSeek V4-Flash is 82.5 GB on disk, but each token only uses 6 of 256 experts per layer. So the engine leaves the experts on the NVMe SSD and streams in the ones each token picks. Stock llama.cpp died after two tokens on this machine; capping the working set lets it run to completion, and the greedy output is byte-identical. It's slow, under one token a second, and the repo shows where every second goes.</p>
+        <p class="project-body">DeepSeek V4-Flash is 82.5 GB on disk, but each token only uses 6 of 256 experts per layer. So the engine leaves the experts on the NVMe SSD and streams in the ones each token picks. Stock llama.cpp died after two tokens on this machine; capping the working set lets it run to completion, and the greedy output is byte-identical. It's slow, under one token a second, and the repo shows where every second goes. Before writing any code, I tested about twenty ideas borrowed from biology and physics, from immune memory to the way DNA packs a body into a small genome. Most turned out to be a cache under a new name. The compression idea lasted an hour: real expert weights measured barely more compressible than random noise.</p>
         <figure class="fig">
           <div class="fig-art" data-fig="expert-stream">
 <div class="fig-wide">
@@ -767,16 +794,23 @@
   <section class="section" id="reading" aria-labelledby="reading-title">
     <div class="wrap">
       <h2 id="reading-title">Reading</h2>
-      <p class="reading-intro">The threads I keep pulling, roughly in order of how much time they eat.</p>
+      <p class="reading-intro">I read across a lot of fields, mostly to understand how AI fits together from the chip up to the market.</p>
       <dl class="rows rows-wide">
-        <div><dt class="label">Silicon</dt><dd>GPUs, chip architecture, and LLM inference engineering</dd></div>
-        <div><dt class="label">Infrastructure</dt><dd>Distributed systems and the infra behind AI at scale</dd></div>
-        <div><dt class="label">Models</dt><dd>Transformer architectures, looped transformers, and research papers most weeks</dd></div>
-        <div><dt class="label">Agents</dt><dd>Multi-agent orchestration, software factories, and recursive self-improvement</dd></div>
-        <div><dt class="label">Markets</dt><dd>The economics of LLMs, data centers, and startups. VC reports on where it's all heading, and the new wave of AI labs</dd></div>
-        <div><dt class="label">Products</dt><dd>Consumer AI apps, and why some of them stick</dd></div>
-        <div><dt class="label">Mind</dt><dd>Neuroscience, neuroplasticity, and some philosophy</dd></div>
+        <div><dt class="label">Silicon</dt><dd>How GPUs and accelerators are built, and why memory bandwidth often matters more than raw compute for LLM inference.</dd></div>
+        <div><dt class="label">Infrastructure</dt><dd>Distributed systems and the infrastructure that serves AI at scale: schedulers, caches, queues, and what breaks when traffic grows.</dd></div>
+        <div><dt class="label">Models</dt><dd>Transformer architectures and their variants, including looped transformers, which run the same layers several times per token. I read a few research papers most weeks.</dd></div>
+        <div><dt class="label">Agents</dt><dd>Multi-agent orchestration, software factories where agents write and review most of the code, and recursive self-improvement: whether AI systems can improve the systems that build them.</dd></div>
+        <div><dt class="label">Agent behavior</dt><dd>Research on how agents actually behave: how they write code, where they take shortcuts, and how they reward-hack their way past tests. scout-deterministic is my own work on that last one.</dd></div>
+        <div><dt class="label">Markets</dt><dd>The economics of LLMs, data centers, and startups. I read VC reports to see where the money is going, and I follow the new AI labs forming outside the big ones.</dd></div>
+        <div><dt class="label">Products</dt><dd>Consumer AI apps, and what separates the ones people keep using from the ones they try once.</dd></div>
+        <div><dt class="label">Mind</dt><dd>Neuroscience and neuroplasticity, how the brain rewires as it learns, and some philosophy.</dd></div>
       </dl>
+      <h3 class="subhead">Recent reads</h3>
+      <!-- Recent reads: newest first, same format as below. -->
+      <ul class="papers">
+        <li><a href="https://www.highagency.com/" target="_blank" rel="noopener">High Agency in 30 <span class="nw">Minutes<span class="ext" aria-hidden="true">↗</span></span></a>, George Mack: an essay on the habit of finding a way when the obvious path is closed</li>
+        <li><a href="https://www.a16z.news/p/state-of-markets-ii" target="_blank" rel="noopener">State of Markets <span class="nw">II<span class="ext" aria-hidden="true">↗</span></span></a>, David George at a16z: 100+ charts on tech and equity markets in the first half of 2026</li>
+      </ul>
       <h3 class="subhead">Papers I've reproduced or built on</h3>
       <ul class="papers">
         <li><a href="https://github.com/Heman10x-NGU/dag-moe-reproduction" target="_blank" rel="noopener">DAG-MoE (ICML <span class="nw">2026)<span class="ext" aria-hidden="true">↗</span></span></a>: reproduced on a laptop</li>
@@ -785,7 +819,6 @@
         <li>LongMemEval and LoCoMo: the memory benchmarks behind FractalMem</li>
         <li><a href="https://github.com/Heman10x-NGU/threadgraph" target="_blank" rel="noopener"><span class="nw">GoBench<span class="ext" aria-hidden="true">↗</span></span></a>: the bug suite ThreadGraph is scored on</li>
       </ul>
-      <!-- Blogs: add <li> items here in the same format to show a "Blogs I read" list. -->
     </div>
   </section>
 
@@ -801,7 +834,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>I post what I'm building and reading on X. Follow along at <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">@heman10x<span class="ext" aria-hidden="true">↗</span></span></a>.</p>
-    <p class="links"><a href="https://github.com/Heman10x-NGU" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="mailto:heman10x@gmail.com">Email</a> · <a href="https://drive.google.com/file/d/1lrbMB1X9jkKniAyCvrBgJoAhVP8mZ7Sy/view?usp=sharing" target="_blank" rel="noopener"><span class="nw">Résumé<span class="ext" aria-hidden="true">↗</span></span></a></p>
+    <p class="links"><a href="https://github.com/Heman10x-NGU" target="_blank" rel="noopener"><span class="nw">GitHub<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://x.com/heman10x" target="_blank" rel="noopener"><span class="nw">X<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="https://www.linkedin.com/in/heman10x/" target="_blank" rel="noopener"><span class="nw">LinkedIn<span class="ext" aria-hidden="true">↗</span></span></a> · <a href="mailto:heman10x@gmail.com">Email</a></p>
     <p class="small">© 2026 Hemant Kumar · This is v2. The previous site is at <a href="/v1/">/v1/</a>.</p>
   </div>
 </footer>
